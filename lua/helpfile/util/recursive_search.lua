@@ -1,5 +1,5 @@
-local helpers = require("util.helpers")
-local config = require("config")
+local helpers = require("helpfile.util.helpers")
+local config = require("helpfile.config")
 local M = {}
 
 --- Decide which level of recursion to search local metafile for
