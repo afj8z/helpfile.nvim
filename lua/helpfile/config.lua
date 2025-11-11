@@ -18,7 +18,6 @@ local M = {
 			current_root = function(path)
 				return path
 			end,
-			limit_cwd = false,
 			global_dir = string,
 			usr_exceptions = {},
 			home_access = true,
@@ -35,7 +34,7 @@ local M = {
 }
 
 function M.config(opts)
-	M.opts = vim.tbl_deep_extend("force", M.opts, opts or {})
+	M.opts = vim.tbl_deep_extend("force", M.opts, opts)
 end
 
 return M

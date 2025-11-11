@@ -1,8 +1,8 @@
-local M = {}
-
-local def_cfg = require("config")
-
-local function M.setup(user_opts)
-end
+local config = require("config")
+local M = {
+	setup = function(opts)
+		config.config(opts)
+	end,
+}
 
 return M
