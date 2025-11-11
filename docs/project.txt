@@ -1,0 +1,19 @@
+PURPOSE
+
+Access 'utility/helper - files' from within neovim.
+
+Quickly switch to a local or global todo file, README.md, .gitignore or whatever files
+are designated as 'helpers'.
+
+Recursion goes beyond the $CWD that the nvim session was started in; Perhaps you
+only want a single todo file for all of your projects, but want to avoid
+constant `cd` this `..` that.
+
+HOW IT WORKS
+
+Designate your own helper-files. Run the command or key bind and let the plugin
+recursively search up and down the tree, as deep as `$HOME` or limited, all
+settable in the configuration on a per directory basis.
+
+Also designate a global 'helper directory' - accessible from any nvim
+session accessible from any nvim session.
